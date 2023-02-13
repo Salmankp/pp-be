@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P2P Email Template</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header-block {
+        padding: 10px 0;
+        background: #142e45;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+      }
+      .mail-icon {
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'Roboto', sans-serif;
+      }
+      .body-block {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .body-wrapper .title {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 30px 0;
+        font-family: 'Roboto', sans-serif;
+      }
+      .para {
+        margin-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+      }
+      .code {
+        font-size: 30px;
+        margin: 40px 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+      }
+      .primary-btn {
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-weight: 500;
+        background-color: #007bff;
+        border: 1px solid #007bff;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 20px;
+      }
+      .primary-btn:hover {
+        background-color: #0069d9;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="header-block">
+        <svg
+          width="36"
+          height="33"
+          viewBox="0 0 36 33"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 0C14.5388 0 11.1554 0.967714 8.27752 2.78076C5.39966 4.5938 3.15665 7.17075 1.83212 10.1857C0.507583 13.2007 0.161024 16.5183 0.836265 19.719C1.51151 22.9197 3.17822 25.8597 5.62564 28.1673C8.07306 30.4748 11.1913 32.0463 14.5859 32.6829C17.9806 33.3196 21.4993 32.9929 24.697 31.744C27.8947 30.4952 30.6278 28.3803 32.5507 25.6669C34.4736 22.9535 35.5 19.7634 35.5 16.5C35.5 12.1239 33.6563 7.92709 30.3744 4.83274C27.0925 1.7384 22.6413 0 18 0ZM17.1542 14.7675C17.5685 15.1359 18.0676 15.4088 18.6125 15.565C19.6734 15.9122 20.6609 16.4335 21.5292 17.105C22.1251 17.7487 22.4535 18.5743 22.4535 19.4287C22.4535 20.2832 22.1251 21.1088 21.5292 21.7525C20.8206 22.3647 19.9077 22.7245 18.9479 22.77V24.42H17.4896V22.7838C16.4677 22.7124 15.4991 22.3258 14.7333 21.6837C14.354 21.3091 14.0631 20.8631 13.8796 20.3749C13.6961 19.8867 13.6243 19.3675 13.6688 18.8513H16.25C16.2155 19.1401 16.2457 19.4325 16.3387 19.7096C16.4316 19.9868 16.5852 20.2424 16.7896 20.46C16.9842 20.6308 17.2143 20.7618 17.4653 20.8446C17.7163 20.9274 17.9828 20.9604 18.2479 20.9413C18.7007 20.9676 19.1462 20.8243 19.4875 20.5425C19.6326 20.3953 19.7449 20.222 19.8175 20.033C19.8902 19.844 19.9218 19.6432 19.9104 19.4425C19.9324 19.0395 19.7858 18.6446 19.5021 18.3425C19.086 17.9795 18.5871 17.7113 18.0438 17.5588C16.9779 17.2416 15.9875 16.7326 15.1271 16.06C14.8036 15.7529 14.5531 15.3844 14.3922 14.979C14.2313 14.5737 14.1636 14.1406 14.1938 13.7087C14.1771 13.2832 14.2525 12.8589 14.4155 12.4618C14.5785 12.0646 14.8256 11.7029 15.1417 11.3988C15.8373 10.7744 16.7489 10.4081 17.7083 10.3675V8.56626H19.1667V10.3813C20.1275 10.4789 21.0133 10.9162 21.6458 11.605C22.2644 12.3626 22.5748 13.304 22.5208 14.2588H19.7937C19.831 13.7203 19.6826 13.185 19.3708 12.7325C19.2291 12.5775 19.0555 12.4512 18.8605 12.3613C18.6655 12.2714 18.4532 12.2198 18.2364 12.2095C18.0197 12.1992 17.8029 12.2305 17.5994 12.3015C17.3958 12.3725 17.2096 12.4817 17.0521 12.6225C16.7955 12.9365 16.6662 13.3266 16.6875 13.7225C16.6865 13.9174 16.7273 14.1104 16.8075 14.29C16.8877 14.4696 17.0056 14.632 17.1542 14.7675Z"
+            fill="url(#paint0_linear_61_690)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_61_690"
+              x1="18"
+              y1="31.9275"
+              x2="18"
+              y2="3.245"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#3C48FA" />
+              <stop offset="1" stop-color="#0278DB" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="body-block">
+        <div class="mail-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.2"
+            viewBox="0 0 64 64"
+            width="64"
+            height="64"
+          >
+            <title>icons8-email-64</title>
+            <defs>
+              <image
+                width="60"
+                height="60"
+                id="img1"
+                href="data:image/png;base64,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"
+              />
+            </defs>
+            <style></style>
+            <use id="Background" href="#img1" x="2" y="2" />
+          </svg>
+        </div>
+        <div class="body-wrapper">
+          <h1 class="title">Hi there!</h1>
+          <p class="para">
+            Welcome to P2P! Ready to experience all the benifits of being
+            financially independent? Before you head off to the races, make sure
+            to verify your email address using the code below:
+          </p>
+          <h3 class="code">{{verification_code}}</h3>
+          <p class="para">
+            Use this code on the website or P2P mobile app to confirm your email
+            address. Alternatively you can verify your email clicking
+            <b>Verify email</b> below:
+          </p>
+          <div>
+            <button class="primary-btn">Verify Email</button>
+          </div>
+          <p class="para">
+            Once verified, you can read more about securing your account on our
+            knowledge base resources and set up two-factor authentication.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

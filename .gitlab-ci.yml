@@ -1,0 +1,20 @@
+p2p-backend:
+  stage: deploy
+  tags:
+    - p2p-backend-pipeline
+  environment:
+    name: p2p-backend
+    
+  before_script:
+    - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )"
+    - mkdir -p ~/.ssh
+    - eval $(ssh-agent -s)
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+  script:
+    - echo "Deploy to qa server"
+    - ssh-add <(echo "$SSH_KEY")
+    - rm -rf .git
+    - ssh -o StrictHostKeyChecking=no p2p@10.10.10.38 "cd /home/p2p/p2pmarketplacebackend; git reset --hard; git pull origin master; npm install --force; pm2 restart backend; exit"
+
+  only:
+    - master
